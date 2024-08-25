@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-const user_id = "john_doe_17091999";  // Replace with actual user ID
+const user_id = "john_doe_17091999";  
 
 app.post('/bfhl', (req, res) => {
     const data = req.body.data;
@@ -34,8 +34,8 @@ app.post('/bfhl', (req, res) => {
     res.json({
         is_success: true,
         user_id: "john_doe_17091999",
-        email: "john@xyz.com",  // Replace with actual email
-        roll_number: "ABCD123", // Replace with actual roll number
+        email: "john@xyz.com", 
+        roll_number: "ABCD123", 
         numbers: numbers,
         alphabets: alphabets,
         highest_lowercase_alphabet: highestLowercase ? [highestLowercase] : []
